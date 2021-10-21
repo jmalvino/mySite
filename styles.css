@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Birthstone';
+    src: url('font\Birthstone-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(11, 10, 56);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90vh 10vh;
+    grid-template-areas: "header main" "footer footer";
+}
+
+header{
+    background: black;
+    grid-area: header;
+}
+
+main{
+    background:rgb(255, 20, 79);
+    grid-area: main;
+}
+
+footer{
+    background: rgb(27, 27, 27);
+    grid-area: footer;  
+}
+
+footer div a { 
+    color: rgb(77, 74, 74);
+}
+
+footer div {
+    float: center;
+    padding-left: 35%;
+    padding-top: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.container > header > div {
+    float: right;
+    padding-right: 20%;
+    padding-top: 20%;
+    padding-bottom: 40%;
+}
+
+.container > main > div {
+    float: left;
+    padding-left: 20%;
+    padding-top: 20%;
+    padding-bottom: 40%;
+}
+
+.container > header > div > h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: white;
+   
+}
+
+h1{
+    font-size: 3em;
+   
+}
+
+.container > header > div > h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;    
+ }
+
+ .container > header > div > button{
+  background: #333;
+  color: #ccc;
+  width: 200px;
+  height: 60px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 4px;
+  overflow: hidden;
+  
+}
+
+.container > header > div > button:hover{
+    background: rgb(255, 20, 79);
+    color: #ccc;
+    width: 200px;
+    height: 60px;
+    border: 0;
+    font-size: 18px;
+    border-radius: 4px;
+    overflow: hidden;
+    
+}
+
+
+.container > main > div > h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: white;
+}
+
+.container > main > div > h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;    
+ }
+
+ .container > main > div > button{  
+  background: rgb(202, 18, 64);
+  color: #ccc;
+  width: 200px;
+  height: 60px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 4px;
+  overflow: hidden;
+  
+}
+
+.container > main > div > button:hover{
+    background: #333;
+    color: #ccc;
+    width: 200px;
+    height: 60px;
+    border: 0;
+    font-size: 18px;
+    border-radius: 4px;
+    overflow: hidden;
+    
+}

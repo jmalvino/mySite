@@ -52,9 +52,11 @@ header, .navbar{
     padding: 0;
 }
 
+/*
 #mainSlider .carousel-inner, #mainSlider .carousel-item{
     height: 90vh;
 }
+*/
 
 #mainSlider .carousel-caption{
     top: 30%;
@@ -73,27 +75,30 @@ header, .navbar{
 }
 
 .main-btn{
-    background-color: black;
+    background-color: transparent;
     color: #fff;
     text-transform: uppercase;
     width: 200px;
     height: 60px;
     padding: 10px 20px;
     border-radius: 30px;
-    border: 3px solid transparent;
+    border: 3px solid #101a33;
     transition: .5s;
     text-decoration: none;
+    
 }
 
 .main-btn:hover{
     text-decoration: none;
     color: #fff;
-    background-color: transparent;
-    border-color: black;
+    background-color: #101a33;
+    border-color: #101a33;
+    border: 3px solid transparent;
+    
 }
 
 .carousel-indicators .active{
-    background-color: black;
+    background-color: #101a33;
 }
 
 #about-area{
@@ -118,7 +123,7 @@ header, .navbar{
 
 .about-title{
     font-size: 17px;
-    color: #444;
+    color: #101a33;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -135,4 +140,30 @@ header, .navbar{
 #about-list i{
     color: forestgreen;
     margin-right: 15px;
+}
+
+/*SKILL*/
+
+.service-box{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-box i, .service-box h4{
+    transition: .5s;
+}
+
+.service-box i{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #101a33;
+}
+
+.service-box h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-box:hover > i, .service-box:hover > h4{
+    color: #2a468b ;
 }
